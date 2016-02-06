@@ -12,13 +12,13 @@ class NavBar extends React.Component {
           <li><Link to='#'>Gallery</Link></li>
           <li className='scrollDown'>Affilates
             <ul className='navHide'>
-              <li><Link to='#'>Family Counseling Center</Link></li>
-              <li><Link to='#'>MAD SAM</Link></li>
-              <li><Link to='#'>Sponsors</Link></li>
+              <li><a href='http://www.victory4families.org/'>Family Counseling Center</a></li>
+              <li><Link to='madsam'>MAD SAM</Link></li>
+              <li><Link to='sponsors'>Sponsors</Link></li>
             </ul>
           </li>
-          <li><Link to='#'>En Español</Link></li>
-          <li><Link to='#'>Contact Us</Link></li>
+          <li><Link to='espanol'>En Español</Link></li>
+          <li><Link to='contactus'>Contact Us</Link></li>
         </ul>
       </nav>
     )
