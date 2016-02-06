@@ -6,10 +6,10 @@ class NavBar extends React.Component {
     return(
       <nav>
         <ul>
-          <li><Link to='#'>Home</Link></li>
-          <li><Link to='#'>Programs</Link></li>
-          <li><Link to='#'>Volunteering</Link></li>
-          <li><Link to='#'>Gallery</Link></li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='programs'>Programs</Link></li>
+          <li><Link to='volunteering'>Volunteering</Link></li>
+          <li><Link to='gallery'>Gallery</Link></li>
           <li className='scrollDown'>Affilates
             <ul className='navHide'>
               <li><Link to='#'>Family Counseling Center</Link></li>
