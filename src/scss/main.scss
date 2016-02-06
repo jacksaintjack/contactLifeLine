@@ -2,7 +2,7 @@
 @import '../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss';
 
 //Styling for NavBar
-nav {
+.mainNav {
   @include outer-container(100%);
   background-color:#73AFB7;
   height:3em;
