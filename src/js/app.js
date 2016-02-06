@@ -23,7 +23,7 @@ ReactDOM.render((
         <Route path='madsam' component={MadSam}/>
         <Route path='sponsors' component={Sponsors}/>
         <Route path='espanol' component={Espanol}/>
-        <Route path='contactus' component={contactus}/>
+        <Route path='contactus' component={ContactUs}/>
     </Route>
   </Router>
 ), document.getElementById('app'));
