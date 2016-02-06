@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute } from 'react-router';
-import { hashHistory } from 'react-router'
+import { render } from 'react-dom'
+import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 import NavBar from './components/navBar.js';
 import Home from './components/home.js';
@@ -14,16 +14,16 @@ import Espanol from './components/espanol.js';
 import ContactUs from './components/contactUs.js';
 
 ReactDOM.render((
-  <Router history={hashHistory}>
-    <Route path='/' component={NavBar}>
-        <IndexRoute component={Home}/>
-        <Route path='programs' component={Programs}/>
-        <Route path='volunteering' component={Volunteering}/>
-        <Route path='gallery' component={Gallery}/>
-        <Route path='madsam' component={MadSam}/>
-        <Route path='sponsors' component={Sponsors}/>
-        <Route path='espanol' component={Espanol}/>
-        <Route path='contactus' component={ContactUs}/>
+  <Router history={ hashHistory }>
+    <Route path='/' component={ NavBar }>
+      <IndexRoute component={ Home }/>
+      <Route path='programs' component={ Programs }/>
+      <Route path='volunteering' component={ Volunteering }/>
+      <Route path='gallery' component={ Gallery }/>
+      <Route path='madsam' component={ MadSam }/>
+      <Route path='sponsors' component={ Sponsors }/>
+      <Route path='espanol' component={ Espanol }/>
+      <Route path='contactus' component={ ContactUs }/>
     </Route>
   </Router>
 ), document.getElementById('app'));
