@@ -45,7 +45,7 @@
       }
     }
     .socialMediaIcons{
-      @include span-columns(2.5);
+      @include span-columns(1.8);
       position:absolute;
       left:90em;
       a{
@@ -125,6 +125,10 @@ main{
     background-color:gray;
     text-align:center;
     height:10em;
+  }
+
+  nav{
+    @include span-columns(12);
   }
 }
 
