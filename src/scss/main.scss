@@ -3,6 +3,7 @@
 
 
 //Styling for NavBar
+
 .mainNav {
   @include outer-container(100%)
   background-color:#73AFB7;
@@ -90,6 +91,7 @@ main{
       }
     }
   }
+}
 
   header{
     @include span-columns(11);
@@ -99,4 +101,27 @@ main{
     background-size: cover;
     height:10em;
   }
+
+//Styling for Programs
+.programContainer {
+  @include span-columns(12);
+  position: absolute;
+}
+
+// Styling for Volunteering
+.volunteerContainer {
+  @include span-columns(12);
+  position: absolute;
+}
+
+// Styling for Mad Sam
+.madSamContainer {
+  @include span-columns(12);
+  position: absolute;
+}
+
+//Styling for Espanol
+.espanolContainer {
+  @include span-columns(12);
+  position: absolute;
 }
