@@ -19,6 +19,13 @@ class NavBar extends React.Component {
             </li>
             <li><Link to='contactus'>Contact Us</Link></li>
             <li><Link to='OurHistory'>History</Link></li>
+            <li className='socialMediaIcons'>
+              <ul>
+                <a href='https://www.facebook.com/Contact-Lifeline-of-the-Highland-Rim-195788343778294/' target="_blank"> <li className="facebook"><i className="fa fa-facebook"></i></li></a>
+                <a href='https://twitter.com/contact_hope' target="_blank"> <li className="twitter"><i className="fa fa-twitter"></i></li> </a>
+                <a href='https://www.instagram.com/contactlifelinehr/' target="_blank"><li className="instagram"><i className="fa fa-instagram"></i></li> </a>
+              </ul>
+            </li>
           </ul>
         </nav>
         <main>
