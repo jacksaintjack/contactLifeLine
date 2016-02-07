@@ -4,14 +4,13 @@ import { Link } from 'react-router';
 class Home extends React.Component {
   render () {
     return(
-      <main>
+      <section className='homeMain'>
+        <ul>
+          <a src='https://www.facebook.com/Contact-Lifeline-of-the-Highland-Rim-195788343778294/'> <li className="facebook"><i className="fa fa-facebook"></i></li></a>
+          <a src='https://twitter.com/contact_hope'> <li className="twitter"><i className="fa fa-twitter"></i></li> </a>
+          <a src='https://www.instagram.com/contactlifelinehr/'><li className="instagram"><i className="fa fa-instagram"></i></li> </a>
+        </ul>
         <header>
-          <ul>
-            <a src='https://www.facebook.com/Contact-Lifeline-of-the-Highland-Rim-195788343778294/'><li></li></a>
-            <a><li></li></a>
-            <a><li></li></a>
-            <a><li></li></a>
-          </ul>
           <h1></h1>
           <h3></h3>
           <h2></h2>
@@ -23,7 +22,7 @@ class Home extends React.Component {
             <li></li>
           </ul>
         </nav>
-      </main>
+      </section>
     )
   }
 }
