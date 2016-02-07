@@ -40,6 +40,8 @@
 
       .navHide{
         display:block;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        background:black;
       }
     }
   }
@@ -55,6 +57,7 @@ main{
 .homeMain{
   @include span-columns(12);
   position:absolute;
+  background: #97BABF;
 
   ul{
     @include span-columns(11.55)
@@ -89,16 +92,44 @@ main{
       }
     }
   }
-}
+
 
   header{
     @include span-columns(11);
     @include shift(0.5);
     background-image: url('../img/ThePath.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 60em;
+    background-position: 0em -13.5em;
+    height:40em;
+
+    h1{
+      color:white;
+      text-align:center;
+    }
+
+    h3{
+      color:white;
+      text-align:center;
+    }
+
+    h4{
+      color:white;
+      text-align:center;
+    }
+
+    h2{
+      color:white;
+      text-align:center;
+    }
+  }
+  .motto{
+    @include span-columns(12);
+    background-color:gray;
+    text-align:center;
     height:10em;
   }
+}
 
 //Styling for Programs
 .programContainer {
