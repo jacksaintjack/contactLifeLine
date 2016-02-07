@@ -6,9 +6,9 @@ class Home extends React.Component {
     return(
       <section className='homeMain'>
         <ul>
-          <a src='https://www.facebook.com/Contact-Lifeline-of-the-Highland-Rim-195788343778294/'> <li className="facebook"><i className="fa fa-facebook"></i></li></a>
-          <a src='https://twitter.com/contact_hope'> <li className="twitter"><i className="fa fa-twitter"></i></li> </a>
-          <a src='https://www.instagram.com/contactlifelinehr/'><li className="instagram"><i className="fa fa-instagram"></i></li> </a>
+          <a href='https://www.facebook.com/Contact-Lifeline-of-the-Highland-Rim-195788343778294/' target="_blank"> <li className="facebook"><i className="fa fa-facebook"></i></li></a>
+          <a href='https://twitter.com/contact_hope' target="_blank"> <li className="twitter"><i className="fa fa-twitter"></i></li> </a>
+          <a href='https://www.instagram.com/contactlifelinehr/' target="_blank"><li className="instagram"><i className="fa fa-instagram"></i></li> </a>
         </ul>
         <header>
           <h1></h1>
