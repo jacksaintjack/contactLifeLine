@@ -19,10 +19,10 @@ class Home extends React.Component {
         </section>
         <nav>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>90
+            <li><p>Mission</p></li>
+            <li><p>About Us</p></li>
+            <li><p>Join Us</p></li>
+          </ul>
         </nav>
       </section>
     )
