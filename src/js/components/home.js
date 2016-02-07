@@ -11,7 +11,7 @@ class Home extends React.Component {
           <a href='https://www.instagram.com/contactlifelinehr/' target="_blank"><li className="instagram"><i className="fa fa-instagram"></i></li> </a>
         </ul>
         <header>
-          <h1>Conact Lifeline</h1>
+          <h1>Contact Lifeline</h1>
           <h3>Dear friends, do not be surprised at the fiery ordeal that has come on you to test you,
             as though something strange were happening to you. But rejoice inasmuch as you participate in the sufferings of Christ,
             so that you may be overjoyed when his glory is revealed.

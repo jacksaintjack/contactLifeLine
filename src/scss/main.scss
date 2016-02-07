@@ -4,7 +4,7 @@
 //Styling for NavBar
 .mainNav {
   @include outer-container(100%)
-  background-color:#73AFB7;
+  background-color: #1B4D55;
   height:3em;
 
   ul {
@@ -57,8 +57,7 @@ main{
 .homeMain{
   @include span-columns(12);
   position:absolute;
-  background: #97BABF;
-
+  background: rgba(130, 130, 122, 0.2);
   ul{
     @include span-columns(11.55)
     a{
@@ -125,7 +124,7 @@ main{
   }
   .motto{
     @include span-columns(12);
-    background-color:gray;
+    background-color:#7C7C6F;
     text-align:center;
     height:10em;
   }
