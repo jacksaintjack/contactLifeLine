@@ -1,9 +1,10 @@
 @import '../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 @import '../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss';
 
+
 //Styling for NavBar
 .mainNav {
-  @include outer-container(100%);
+  @include outer-container(100%)
   background-color:#73AFB7;
   height:3em;
 
@@ -30,6 +31,7 @@
         color:white;
         padding:0;
         display:none;
+
         li {
           @include span-columns(12);
           float:left;
@@ -42,5 +44,59 @@
         display:block;
       }
     }
+  }
+}
+
+// For main that is in every page
+main{
+  @include outer-container(100%)
+}
+
+// Home Styling Section
+.homeMain{
+  @include span-columns(12);
+  position:absolute;
+
+  ul{
+    @include span-columns(11.55)
+    a{
+      li{
+        width:2.8em;
+        padding-top: 6px;
+        padding-bottom:6px;
+        list-style: none;
+        border-radius: 10%;
+        text-align:center;
+        display:inline-block;
+        float:right;
+        position:relative;
+        margin-right:0.5%;
+
+        i{
+          font-size:2.3em;
+          color:white;
+        }
+      }
+      .facebook{
+        background: #445897;
+      }
+
+      .instagram{
+        background: #8A5A4E;
+      }
+
+      .twitter{
+        background: #6A8DC7;
+      }
+    }
+  }
+
+  header{
+    @include span-columns(11);
+    @include shift(0.5);
+    background-image: url('../img/ThePath.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:10em;
   }
 }
