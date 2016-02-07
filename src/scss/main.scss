@@ -47,7 +47,7 @@
     .socialMediaIcons{
       @include span-columns(1.8);
       position:absolute;
-      left:90em;
+      left:85%;
       a{
         li{
           width:2.8em;
@@ -91,6 +91,7 @@ main{
   @include span-columns(12);
   position:absolute;
   background: rgba(130, 130, 122, 0.2);
+
   ul{
     @include span-columns(11.55)
     a{
