@@ -44,6 +44,39 @@
         background:black;
       }
     }
+    .socialMediaIcons{
+      @include span-columns(1.8);
+      position:absolute;
+      left:90em;
+      a{
+        li{
+          width:2.8em;
+          padding-top: 6px;
+          padding-bottom:6px;
+          list-style: none;
+          border-radius: 10%;
+          text-align:center;
+          display:inline-block;
+          margin-right:4px;
+
+          i{
+            font-size:2.3em;
+            color:white;
+          }
+        }
+        .facebook{
+          background: #445897;
+        }
+
+        .instagram{
+          background: #8A5A4E;
+        }
+
+        .twitter{
+          background: #6A8DC7;
+        }
+      }
+    }
   }
 }
 
@@ -92,10 +125,8 @@ main{
     }
   }
 
-
   header{
-    @include span-columns(11);
-    @include shift(0.5);
+    @include span-columns(12);
     background-image: url('../img/ThePath.jpg');
     background-repeat: no-repeat;
     background-size: 100% 60em;
@@ -127,6 +158,10 @@ main{
     background-color:#7C7C6F;
     text-align:center;
     height:10em;
+  }
+
+  nav{
+    @include span-columns(12);
   }
 }
 
