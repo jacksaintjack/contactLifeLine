@@ -2,7 +2,7 @@
 @import '../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss';
 
 //Styling for NavBar
-.mainNav {
+nav {
   @include outer-container(100%);
   background-color:#73AFB7;
   height:3em;
@@ -43,4 +43,28 @@
       }
     }
   }
+}
+
+//Styling for Programs
+.programContainer {
+  @include span-columns(12);
+  position: absolute;
+}
+
+// Styling for Volunteering
+.volunteerContainer {
+  @include span-columns(12);
+  position: absolute;
+}
+
+// Styling for Mad Sam
+.madSamContainer {
+  @include span-columns(12);
+  position: absolute;
+}
+
+//Styling for Espanol
+.espanolContainer {
+  @include span-columns(12);
+  position: absolute;
 }

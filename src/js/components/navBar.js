@@ -13,7 +13,7 @@ class NavBar extends React.Component {
             <li><Link to='gallery'>Gallery</Link></li>
             <li className='scrollDown'>Affilates
               <ul className='navHide'>
-                <li><a href='http://www.victory4families.org/'>Family Counseling Center</a></li>
+                <li><a href='http://www.victory4families.org/' target="_blank">Family Counseling Center</a></li>
                 <li><Link to='madsam'>MAD SAM</Link></li>
                 <li><Link to='sponsors'>Sponsors</Link></li>
               </ul>
