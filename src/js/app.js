@@ -7,10 +7,8 @@ import NavBar from './components/navBar.js';
 import Home from './components/home.js';
 import Programs from './components/programs.js';
 import Volunteering from './components/volunteering.js';
-import Gallery from './components/gallery.js';
 import MadSam from './components/madSam.js';
 import Sponsors from  './components/sponsors.js';
-import Espanol from './components/espanol.js';
 import ContactUs from './components/contactUs.js';
 import OurHistory from './components/ourHistory.js';
 
@@ -20,10 +18,8 @@ ReactDOM.render((
       <IndexRoute component={ Home }/>
       <Route path='programs' component={ Programs }/>
       <Route path='volunteering' component={ Volunteering }/>
-      <Route path='gallery' component={ Gallery }/>
       <Route path='madsam' component={ MadSam }/>
       <Route path='sponsors' component={ Sponsors }/>
-      <Route path='espanol' component={ Espanol }/>
       <Route path='contactus' component={ ContactUs }/>
       <Route path='ourHistory' component={ OurHistory }/>
 
