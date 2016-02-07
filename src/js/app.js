@@ -12,6 +12,7 @@ import MadSam from './components/madSam.js';
 import Sponsors from  './components/sponsors.js';
 import Espanol from './components/espanol.js';
 import ContactUs from './components/contactUs.js';
+import OurHistory from './components/ourHistory.js';
 
 ReactDOM.render((
   <Router history={ hashHistory }>
@@ -24,6 +25,8 @@ ReactDOM.render((
       <Route path='sponsors' component={ Sponsors }/>
       <Route path='espanol' component={ Espanol }/>
       <Route path='contactus' component={ ContactUs }/>
+      <Route path='ourHistory' component={ OurHistory }/>
+
     </Route>
   </Router>
 ), document.getElementById('app'));

@@ -20,6 +20,7 @@ class NavBar extends React.Component {
             </li>
             <li><Link to='espanol'>En Español</Link></li>
             <li><Link to='contactus'>Contact Us</Link></li>
+            <li><Link to='OurHistory'>History</Link></li>
           </ul>
         </nav>
         <main>
