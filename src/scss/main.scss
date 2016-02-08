@@ -129,6 +129,12 @@ main{
 
   nav{
     @include span-columns(12);
+
+    ul{
+      li{
+        list-style: none;
+      }
+    }
   }
 }
 
