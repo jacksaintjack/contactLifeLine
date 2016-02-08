@@ -122,9 +122,17 @@ main{
   }
   .motto{
     @include span-columns(12);
-    background-color:#7C7C6F;
+    // background-color:#7C7C6F;
+    background: url("../img/texture.jpg");
+    // background-repeat: no-repeat;
     text-align:center;
     height:10em;
+    font-size: 2em;
+    padding-top: 5%;
+    p {
+      font-family: init;
+      font-style: italic;
+    }
   }
 
   nav{
@@ -152,12 +160,6 @@ main{
 
 // Styling for Mad Sam
 .madSamContainer {
-  @include span-columns(12);
-  position: absolute;
-}
-
-//Styling for Espanol
-.espanolContainer {
   @include span-columns(12);
   position: absolute;
 }
