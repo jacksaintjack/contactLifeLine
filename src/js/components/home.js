@@ -12,14 +12,14 @@ class Home extends React.Component {
             so that you may be overjoyed when his glory is revealed.
           </h3>
           <h4>1 Peter 4:12-13 NIV</h4>
-          <h2><a href='tel://1.800.454.8336'>1-800-454-8336</a></h2>
+          <a className='phoneNumber' href='tel://1.800.454.8336'><h2>1-800-454-8336</h2></a>
         </header>
         <section className='motto'>
           <p>Contact Lifeline listening to and caring for people Christ's way!</p>
         </section>
         <nav>
           <ul>
-            <li><p>Mission</p></li>
+            <li className><p>Mission</p></li>
             <li><p>About Us</p></li>
             <li><p>Join Us</p></li>
           </ul>
