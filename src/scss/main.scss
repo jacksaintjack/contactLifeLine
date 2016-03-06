@@ -8,6 +8,22 @@
   text-align:center;
   text-shadow: 3px 3px 3px black;
 }
+
+@mixin navBoxHome {
+  @include span-columns(4);
+  border: 1px black solid;
+  box-shadow: 1px 1px 1px black;
+  height: 20em;
+  background-size: cover;
+}
+@mixin navBoxText {
+  color: white;
+  padding-top: 23%;
+  font-size: 4.5em;
+  text-shadow: 3px 3px 5px black;
+  text-align:center;
+  margin:0;
+}
 //Styling for NavBar
 .mainNav {
   @include outer-container(100%)
@@ -146,7 +162,7 @@ main{
     text-align:center;
     height:5em;
     font-size: 2em;
-    padding-top: 2.5%;
+    padding-top: 2%;
     p {
       font-family: init;
       font-style: italic;
@@ -157,11 +173,90 @@ main{
 
   nav{
     @include span-columns(12);
+    padding-bottom:1%;
 
     ul{
+      padding:0 1% 0 1%;
+
       li{
         list-style: none;
       }
+      .missionBox {
+        @include navBoxHome;
+        background-image:url('../img/BookThinking.jpg');
+
+        p{
+          @include navBoxText;
+        }
+
+        .shadowDivOne {
+          width:100%;
+          height:100%;
+          background-color:none;
+          transition: background-color, 1s;
+        }
+      }
+      .aboutBox {
+        @include navBoxHome;
+        background-image:url('../img/Flower.jpg');
+
+        p{
+          @include navBoxText;
+        }
+
+        .shadowDivTwo {
+          width:100%;
+          height:100%;
+          background-color:none;
+          transition: background-color, 1s;
+        }
+      }
+      .joinBox{
+        @include navBoxHome;
+        background-image:url('../img/Togather.jpg');
+
+        p{
+          @include navBoxText;
+        }
+
+        .shadowDivThree {
+          width:100%;
+          height:100%;
+          background-color:none;
+          transition: background-color, 1s;
+        }
+      }
+      // Hover Effects for nav boxes on home page
+      .missionBox:hover{
+        .shadowDivOne{
+          background-color:rgba(14, 51, 90, 0.65);
+        }
+      }
+      .aboutBox:hover{
+        .shadowDivTwo{
+          background-color:rgba(14, 51, 90, 0.65);
+        }
+      }
+      .joinBox:hover{
+        .shadowDivThree{
+          background-color:rgba(14, 51, 90, 0.65);
+        }
+      }
+    }
+  }
+  article {
+    @include span-columns(10);
+    @include shift(1);
+    border: 1px black solid;
+    float: left;
+    background-color: #2E6169;
+    margin-bottom:2%;
+
+    p {
+      padding: 0 1% 0 1%;
+      font-size: 1.3em;
+      color: white;
+      text-shadow: 3px 3px 4px black;
     }
   }
 }
