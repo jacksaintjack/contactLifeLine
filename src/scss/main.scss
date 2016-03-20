@@ -1,6 +1,24 @@
 @import '../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 @import '../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss';
 
+//
+/***** TABLE OF CONTENTS *****/
+/***** 1. Main Navigation Bar *****/
+/***** 2. Home Main *****/
+/***** 3. Footer Section *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+/***** TABLE OF CONTENTS *****/
+//
 //Mixins
 
 @mixin headerFonts {
@@ -24,10 +42,10 @@
   text-align:center;
   margin:0;
 }
-//Styling for NavBar
+/***** 1. Main Navigation Bar *****/
 .mainNav {
   @include outer-container(100%)
-  background-color: #1B4D55;
+  background-color: #3C717A;
   height:3em;
 
   ul {
@@ -104,32 +122,41 @@
   }
 }
 
-
-// For main that is in every page
-main{
+/***** 2. Home Main *****/
+main {
   @include outer-container(100%)
 }
-
-// Home Styling Section
-.homeMain{
+.homeMain:before, .homeMain:after {
+    content: " ";
+    display: block;
+    clear:both;
+}
+.homeMain {
   @include span-columns(12);
-  position:absolute;
   background: rgba(130, 130, 122, 0.2);
 
-  header{
+  header:before, header:after {
+      content: " ";
+      display: block;
+      clear:both;
+  }
+
+  header {
     @include span-columns(12);
     background-image: url('../img/ThePath.jpg');
     background-repeat: no-repeat;
     background-size: 100% 60em;
     background-position: 0em -13.5em;
     height:40em;
+    float:none;
 
-    h1{
+    h1 {
       @include headerFonts;
       font-size:4em;
+      margin-top:0;
     }
 
-    h3{
+    h3 {
       @include headerFonts;
       @include span-columns (9);
       @include shift (1.5);
@@ -138,14 +165,14 @@ main{
       margin-bottom:0;
     }
 
-    h4{
+    h4 {
       @include headerFonts;
       @include span-columns(5);
       @include shift(6.8);
       font-size:1.3em;
       margin-top: 1em;
     }
-    .phoneNumber{
+    .phoneNumber {
       float:left;
       width:100%;
       text-decoration:none;
@@ -156,7 +183,12 @@ main{
       }
     }
   }
-  .motto{
+  .motto:before, .motto:after {
+    content: " ";
+    display: block;
+    clear:both;
+  }
+  .motto {
     @include span-columns(12);
     background: url("../img/texture.jpg");
     text-align:center;
@@ -170,22 +202,26 @@ main{
       text-shadow: 1px 1px 1px black;
     }
   }
-
-  nav{
+  nav:before, nav:after {
+    content: " ";
+    display: block;
+    clear:both;
+  }
+  nav {
     @include span-columns(12);
     padding-bottom:1%;
 
-    ul{
+    ul {
       padding:0 1% 0 1%;
 
-      li{
+      li {
         list-style: none;
       }
       .missionBox {
         @include navBoxHome;
         background-image:url('../img/BookThinking.jpg');
 
-        p{
+        p {
           @include navBoxText;
         }
 
@@ -200,7 +236,7 @@ main{
         @include navBoxHome;
         background-image:url('../img/Flower.jpg');
 
-        p{
+        p {
           @include navBoxText;
         }
 
@@ -211,7 +247,7 @@ main{
           transition: background-color, 1s;
         }
       }
-      .joinBox{
+      .joinBox {
         @include navBoxHome;
         background-image:url('../img/Togather.jpg');
 
@@ -232,13 +268,13 @@ main{
           background-color:rgba(14, 51, 90, 0.65);
         }
       }
-      .aboutBox:hover{
-        .shadowDivTwo{
+      .aboutBox:hover {
+        .shadowDivTwo {
           background-color:rgba(14, 51, 90, 0.65);
         }
       }
-      .joinBox:hover{
-        .shadowDivThree{
+      .joinBox:hover {
+        .shadowDivThree {
           background-color:rgba(14, 51, 90, 0.65);
         }
       }
@@ -257,6 +293,34 @@ main{
       font-size: 1.3em;
       color: white;
       text-shadow: 3px 3px 4px black;
+    }
+  }
+}
+
+/******* Footer Section *******/
+footer:before, footer:after {
+  content: " ";
+  display: block;
+  clear:both;
+  }
+footer {
+  background:#3C717A;
+  padding-top:1%;
+
+  .outerFooter {
+    @include outer-container(60%)
+
+    section {
+      @include span-columns(3);
+
+      img {
+        height: 7em;
+        width: 7em;
+      }
+    }
+    ul {
+      @include span-columns(3);
+      text-decoration:none;
     }
   }
 }

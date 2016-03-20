@@ -60,61 +60,63 @@ class Home extends React.Component {
         <section className='motto'>
           <p>Contact Lifeline listening to and caring for people Christ's way!</p>
         </section>
-        <nav>
-          <ul>
-            <li className='missionBox' onClick={this.toggleInfoOne}>
-              <div className='shadowDivOne'>
-                <p>Mission</p>
-              </div>
-            </li>
 
-            <li className='aboutBox' onClick={this.toggleInfoTwo}>
-              <div className='shadowDivTwo'>
-                <p>About Us</p>
-              </div>
-            </li>
+        <section className='infoNav'>
+          <nav>
+            <ul>
+              <li className='missionBox' onClick={this.toggleInfoOne}>
+                <div className='shadowDivOne'>
+                  <p>Mission</p>
+                </div>
+              </li>
 
-            <li className='joinBox' onClick={this.toggleInfoThree}>
-              <div className='shadowDivThree'>
-                <p>Join Us</p>
-              </div>
-            </li>
-          </ul>
-        </nav>
+              <li className='aboutBox' onClick={this.toggleInfoTwo}>
+                <div className='shadowDivTwo'>
+                  <p>About Us</p>
+                </div>
+              </li>
 
-        <ToggleDisplay show={this.state.isDisplayedOne}>
-          <article>
-            <p>
-              It is the Christian ministry of Contact Lifeline of the Highland Rim, as a nonprofit organization with services free of charge to all callers,
-              to respond 24 hours daily to the emotional needs of callers with confidential, non-judgmental, active listening,
-              by fostering self-directed resolution, referrals or intervention through telephone with Contact trained volunteers.
-            </p>
-          </article>
-        </ToggleDisplay>
+              <li className='joinBox' onClick={this.toggleInfoThree}>
+                <div className='shadowDivThree'>
+                  <p>Join Us</p>
+                </div>
+              </li>
+            </ul>
+          </nav>
 
-        <ToggleDisplay show={this.state.isDisplayedTwo}>
-          <article >
-            <p>
-                Contact Lifeline of the Highland Rim, a program of the Family Counseling Center of Middle Tennessee,
-                is an accredited Christian local 24-hour helpline service free to residents of Bedford, Coffee, Franklin, Grundy, Lincoln, Moore and Warren counties.
-                We offer crisis intervention, referral, and reassurance services to all who are in need through our 24-hour Crisis line, Teen2Teen Crisis line,and Reassurance program....
-                you need someone to listen; <span style={boldStyle}>WE ARE HERE FOR YOU</span>!
-            </p>
-          </article>
-        </ToggleDisplay>
+          <ToggleDisplay show={this.state.isDisplayedOne}>
+            <article>
+              <p>
+                It is the Christian ministry of Contact Lifeline of the Highland Rim, as a nonprofit organization with services free of charge to all callers,
+                to respond 24 hours daily to the emotional needs of callers with confidential, non-judgmental, active listening,
+                by fostering self-directed resolution, referrals or intervention through telephone with Contact trained volunteers.
+              </p>
+            </article>
+          </ToggleDisplay>
 
-        <ToggleDisplay show={this.state.isDisplayedThree}>
-          <article>
-            <p>
-              If this sounds like something you would like to get involved in, give us a call at
-              <a href='tel://931.247.0754'> (931) 247-0754</a>.
-              We would love to add you to our ever growing family of trained listeners. I promise you, when you start being the one who picks up that line when it rings
-              , and reaching out to those who are troubled, your heart will soar. Just knowing that you were there and was able to listen and encourage someone to make it
-               through one more day is a feeling you won’t find anywhere else.
-            </p>
-          </article>
-        </ToggleDisplay>
+          <ToggleDisplay show={this.state.isDisplayedTwo}>
+            <article >
+              <p>
+                  Contact Lifeline of the Highland Rim, a program of the Family Counseling Center of Middle Tennessee,
+                  is an accredited Christian local 24-hour helpline service free to residents of Bedford, Coffee, Franklin, Grundy, Lincoln, Moore and Warren counties.
+                  We offer crisis intervention, referral, and reassurance services to all who are in need through our 24-hour Crisis line, Teen2Teen Crisis line,and Reassurance program....
+                  you need someone to listen; <span style={boldStyle}>WE ARE HERE FOR YOU</span>!
+              </p>
+            </article>
+          </ToggleDisplay>
 
+          <ToggleDisplay show={this.state.isDisplayedThree}>
+            <article>
+              <p>
+                If this sounds like something you would like to get involved in, give us a call at
+                <a href='tel://931.247.0754'> (931) 247-0754</a>.
+                We would love to add you to our ever growing family of trained listeners. I promise you, when you start being the one who picks up that line when it rings
+                , and reaching out to those who are troubled, your heart will soar. Just knowing that you were there and was able to listen and encourage someone to make it
+                 through one more day is a feeling you won’t find anywhere else.
+              </p>
+            </article>
+          </ToggleDisplay>
+        </section>
       </section>
     )
   }

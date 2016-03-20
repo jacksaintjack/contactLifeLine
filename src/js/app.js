@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom'
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
-import NavBar from './components/navBar.js';
+import Main from './components/main.js';
 import Home from './components/home.js';
 import Programs from './components/programs.js';
 import Volunteering from './components/volunteering.js';
@@ -14,7 +14,7 @@ import OurHistory from './components/ourHistory.js';
 
 ReactDOM.render((
   <Router history={ hashHistory }>
-    <Route path='/' component={ NavBar }>
+    <Route path='/' component={ Main }>
       <IndexRoute component={ Home }/>
       <Route path='programs' component={ Programs }/>
       <Route path='volunteering' component={ Volunteering }/>
@@ -22,7 +22,6 @@ ReactDOM.render((
       <Route path='sponsors' component={ Sponsors }/>
       <Route path='contactus' component={ ContactUs }/>
       <Route path='ourHistory' component={ OurHistory }/>
-
     </Route>
   </Router>
 ), document.getElementById('app'));
