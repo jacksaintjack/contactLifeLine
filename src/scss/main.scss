@@ -64,7 +64,7 @@
       display:inline-block;
       list-style: none;
       margin-right:3%;
-      padding-top:1.3%;
+      padding-top:20px;
 
       a {
         text-decoration: none;
@@ -89,18 +89,10 @@
         }
       }
     }
-  /*  .scrollDown:hover {
-
-      .navHide{
-        display:block;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        background:black;
-      }
-    }
-  */
     .socialMediaIcons{
       @include span-columns(3);
       float:right;
+      padding-top: 12px;
       a{
         li{
           width:2.8em;
@@ -110,8 +102,8 @@
           border-radius: 10%;
           text-align:center;
           display:inline-block;
-          margin-right:4px;
-          float:right;
+          float:left;
+          margin:0 8px 0 0;
 
           i{
             font-size:1.5em;
@@ -159,6 +151,7 @@ main {
     background-position: 0em -13.5em;
     height:40em;
     float:none;
+    padding-top: 90px;
 
     h1 {
       @include headerFonts;
@@ -220,21 +213,19 @@ main {
   nav {
     @include span-columns(12);
     padding-bottom:1%;
-
     ul {
       padding:0 1% 0 1%;
-
       li {
         list-style: none;
       }
       .missionBox {
         @include navBoxHome;
         background-image:url('../img/BookThinking.jpg');
-
+        cursor: pointer;
+        cursor: hand;
         p {
           @include navBoxText;
         }
-
         .shadowDivOne {
           width:100%;
           height:100%;
@@ -245,11 +236,11 @@ main {
       .aboutBox {
         @include navBoxHome;
         background-image:url('../img/Flower.jpg');
-
+        cursor: pointer;
+        cursor: hand;
         p {
           @include navBoxText;
         }
-
         .shadowDivTwo {
           width:100%;
           height:100%;
@@ -260,11 +251,11 @@ main {
       .joinBox {
         @include navBoxHome;
         background-image:url('../img/Togather.jpg');
-
+        cursor: pointer;
+        cursor: hand;
         p{
           @include navBoxText;
         }
-
         .shadowDivThree {
           width:100%;
           height:100%;
@@ -291,19 +282,33 @@ main {
     }
   }
   article {
-    @include span-columns(10);
-    @include shift(1);
+    @include span-columns(9);
+    @include shift(1.5);
     border: 1px black solid;
     float: left;
-    background-color: #2E6169;
+    background:rgba(46, 97, 105, 0.89);
     margin-bottom:2%;
 
     p {
-      padding: 0 1% 0 1%;
-      font-size: 1.3em;
+      padding: 10px 4% 10px 4%;
+      font-size: 1.5em;
       color: white;
       text-shadow: 3px 3px 4px black;
     }
+    a {
+      color: white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+  }
+  #missionArticle {
+    display:none;
+  }
+  #aboutArticle {
+    display:none;
+  }
+  #joinArticle {
+    display:none;
   }
 }
 
@@ -315,7 +320,46 @@ footer:before, footer:after {
 }
 
 footer {
-  @include outer-container(80%);
+  @include outer-container(85%);
+  border-top: 1px solid rgba(128, 128, 128, 0.16);
+
+  .footerLinks {
+    @include span-columns(12);
+
+    .mainLogo, .pageLinks, .afilLinks, .fccLogo {
+      @include span-columns(3);
+      display:inline-block;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    .mainLogo img {
+      height: 7em;
+      width: 7em;
+    }
+    .pageLinks {
+      .footerNav {
+        font-weight:bold
+      }
+      li {
+        list-style: none;
+      }
+    }
+    .afilLinks {
+      .footerNav{
+        font-weight:bold;
+      }
+      li {
+        list-style: none;
+      }
+    }
+    .fccLogo img {
+      height: 7em;
+      width: 7em;
+      float:right;
+    }
+  }
 }
 
 

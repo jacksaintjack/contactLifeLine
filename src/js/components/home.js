@@ -1,51 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router';
 import ToggleDisplay from 'react-toggle-display';
+import $ from 'jquery'
 
 
 class Home extends React.Component {
-  constructor(props){
-    super(props)
+  componentDidMount() {
+    $('.missionBox').click(function () {
+      $('#missionArticle').fadeIn('slow');
+      $('#aboutArticle').css('display', 'none');
+      $('#joinArticle').css('display', 'none');
+    });
 
-    this.state = {
-      isDisplayedOne: false,
-      isDisplayedTwo: false,
-      isDisplayedThree: false
-    }
-    this.toggleInfoOne = this.toggleInfoOne.bind(this),
-    this.toggleInfoTwo = this.toggleInfoTwo.bind(this),
-    this.toggleInfoThree = this.toggleInfoThree.bind(this)
-  }
-  //Toggle state functions
-  toggleInfoOne(event) {
-    event.preventDefault();
-      this.setState({
-        isDisplayedOne: true,
-        isDisplayedTwo: false,
-        isDisplayedThree: false
-      });
-  }
-  toggleInfoTwo(event) {
-    event.preventDefault();
-      this.setState({
-        isDisplayedOne: false,
-        isDisplayedTwo: true,
-        isDisplayedThree: false
-      });
-  }
-  toggleInfoThree(event) {
-    event.preventDefault();
-      this.setState({
-        isDisplayedOne: false,
-        isDisplayedTwo: false,
-        isDisplayedThree: true
-      });
-  }
+    $('.aboutBox').click(function () {
+      $('#aboutArticle').fadeIn('slow');
+      $('#missionArticle').css('display', 'none');
+      $('#joinArticle').css('display', 'none');
+    });
 
+    $('.joinBox').click(function () {
+      $('#joinArticle').fadeIn('slow');
+      $('#aboutArticle').css('display', 'none');
+      $('#missionArticle').css('display', 'none');
+    });
+  }
   render () {
-    var boldStyle = {
-      fontweight: 'bold'
-    };
     return(
       <section className='homeMain'>
         <header>
@@ -64,19 +43,19 @@ class Home extends React.Component {
         <section className='infoNav'>
           <nav>
             <ul>
-              <li className='missionBox' onClick={this.toggleInfoOne}>
+              <li className='missionBox'>
                 <div className='shadowDivOne'>
                   <p>Mission</p>
                 </div>
               </li>
 
-              <li className='aboutBox' onClick={this.toggleInfoTwo}>
+              <li className='aboutBox'>
                 <div className='shadowDivTwo'>
                   <p>About Us</p>
                 </div>
               </li>
 
-              <li className='joinBox' onClick={this.toggleInfoThree}>
+              <li className='joinBox'>
                 <div className='shadowDivThree'>
                   <p>Join Us</p>
                 </div>
@@ -84,29 +63,25 @@ class Home extends React.Component {
             </ul>
           </nav>
 
-          <ToggleDisplay show={this.state.isDisplayedOne}>
-            <article>
+            <article id='missionArticle'>
               <p>
                 It is the Christian ministry of Contact Lifeline of the Highland Rim, as a nonprofit organization with services free of charge to all callers,
                 to respond 24 hours daily to the emotional needs of callers with confidential, non-judgmental, active listening,
                 by fostering self-directed resolution, referrals or intervention through telephone with Contact trained volunteers.
               </p>
             </article>
-          </ToggleDisplay>
 
-          <ToggleDisplay show={this.state.isDisplayedTwo}>
-            <article >
+            <article id='aboutArticle'>
               <p>
                   Contact Lifeline of the Highland Rim, a program of the Family Counseling Center of Middle Tennessee,
                   is an accredited Christian local 24-hour helpline service free to residents of Bedford, Coffee, Franklin, Grundy, Lincoln, Moore and Warren counties.
                   We offer crisis intervention, referral, and reassurance services to all who are in need through our 24-hour Crisis line, Teen2Teen Crisis line,and Reassurance program....
-                  you need someone to listen; <span style={boldStyle}>WE ARE HERE FOR YOU</span>!
+                  you need someone to listen.
+                  <span>WE ARE HERE FOR YOU!</span>
               </p>
             </article>
-          </ToggleDisplay>
 
-          <ToggleDisplay show={this.state.isDisplayedThree}>
-            <article>
+            <article id='joinArticle'>
               <p>
                 If this sounds like something you would like to get involved in, give us a call at
                 <a href='tel://931.247.0754'> (931) 247-0754</a>.
@@ -115,7 +90,6 @@ class Home extends React.Component {
                  through one more day is a feeling you won’t find anywhere else.
               </p>
             </article>
-          </ToggleDisplay>
         </section>
       </section>
     )
