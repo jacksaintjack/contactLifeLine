@@ -6,7 +6,7 @@
 /***** 1. Main Navigation Bar *****/
 /***** 2. Home Main *****/
 /***** 3. Footer Section *****/
-/***** TABLE OF CONTENTS *****/
+/***** 4. Programs *****/
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
@@ -193,16 +193,16 @@ main {
   }
   .motto {
     @include span-columns(12);
-    background: url("../img/texture.jpg");
+    background: url("../img/checkered_pattern.png");
     text-align:center;
     height:5em;
-    font-size: 2em;
-    padding-top: 2%;
+    font-size: 2.5em;
+    padding-top: 40px;
     p {
       font-family: init;
       font-style: italic;
       color:white;
-      text-shadow: 1px 1px 1px black;
+      text-shadow: 3px 2px 3px black;
     }
   }
   nav:before, nav:after {
@@ -363,20 +363,52 @@ footer {
 }
 
 
-//Styling for Programs
-.programContainer {
-  @include span-columns(4);
-  position: absolute;
+/***** 4. Programs *****/
+.programsContainer {
+  @include outer-container(100%);
+
+  section {
+    @include shift(1.5);
+    @include span-columns(9);
+  }
+  header {
+    @include span-columns(12);
+    background-image: url('../img/CrossMountain.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 60em;
+    background-position: 0em -13.5em;
+    height:20em;
+    float:none;
+  }
 }
 
 // Styling for Volunteering
 .volunteerContainer {
-  @include span-columns(4);
-  position: absolute;
+  @include outer-container(100%);
+
+  section {
+    @include shift(1.5);
+    @include span-columns(9);
+  }
+  header {
+    @include span-columns(12);
+    background-image: url('../img/TheTree.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0em -13.5em;
+    height:30em;
+
+    h3 {
+      margin-top:0;
+      position:relative;
+    }
+    h4 {
+      position:relative;
+    }
+  }
 }
 
 // Styling for Mad Sam
 .madSamContainer {
-  @include span-columns(4);
-  position: absolute;
+  @include outer-container(70%);
 }
