@@ -33,10 +33,9 @@ class Main extends React.Component {
             <li><Link to='volunteering'>Volunteering</Link></li>
             <li id='navDropDown' className ='scrollDown'>Affiliates
             <ul className='navHide'>
-                <li></li>
-                <li><a href='http://www.victory4families.org/' target="_blank">Family Counseling Center</a></li>
-                <li><Link to='madsam'>MAD SAM</Link></li>
-                <li><Link to='sponsors'>Sponsors</Link></li>
+                <li><a href='http://www.victory4families.org/' target="_blank"><i className="fa fa-angle-double-right"></i> Family Counseling Center</a></li>
+                <li><i className="fa fa-angle-double-right"></i><Link to='madsam'> MAD SAM</Link></li>
+                <li><i className="fa fa-angle-double-right"></i><Link to='sponsors'> Sponsors</Link></li>
               </ul>
             </li>
             <li><Link to='contactus'>Contact Us</Link></li>

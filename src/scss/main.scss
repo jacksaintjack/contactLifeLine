@@ -1,12 +1,16 @@
 @import '../../dist/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 @import '../../dist/bower_components/neat/app/assets/stylesheets/_neat.scss';
 
-//
+
 /***** TABLE OF CONTENTS *****/
+/*****  Mixins *****/
 /***** 1. Main Navigation Bar *****/
 /***** 2. Home Main *****/
 /***** 3. Footer Section *****/
 /***** 4. Programs *****/
+/***** 5. Volunteering *****/
+/***** 6. Mad Sam *****/
+/***** 7. Sponsors *****/
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
@@ -15,11 +19,8 @@
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
-//
-//Mixins
+
+/*****  Mixins *****/
 
 @mixin headerFonts {
   color: rgb(222, 218, 218);
@@ -80,7 +81,7 @@
     li {
       display:inline-block;
       list-style: none;
-      margin-right:3%;
+      margin-right:20px;
       padding-top:20px;
 
       a {
@@ -95,14 +96,15 @@
       .navHide {
         @include span-columns(3);
         color:white;
-        padding:0;
+        padding:10px 10px 10px 15px;
         position:absolute;
         display:none;
         background: rgba(27, 77, 85, 0.83);
         li {
           @include span-columns(12);
+          padding:0 0 8px 0;
           float:left;
-          padding-left:2%;
+          margin-left:0;
         }
       }
     }
@@ -397,7 +399,7 @@ footer {
   }
 }
 
-// Styling for Volunteering
+/***** 5. Volunteering *****/
 .volunteerContainer {
   @include outer-container(100%);
   header {
@@ -413,12 +415,38 @@ footer {
   }
 }
 
-// Styling for Mad Sam
+/***** 6. Mad Sam *****/
 .madSamContainer {
-  @include outer-container(70%);
+  @include textContainers;
+
+  .madSamLogo {
+    @include span-columns(4);
+    margin-top: 60px;
+    height: 11em;
+    background: url('../img/MadSam.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .madSamText {
+    @include span-columns(8);
+    float:right;
+  }
 }
+/***** 7. Sponsors *****/
+.sponsorsContainer {
+  @include textContainers;
 
-
+  h2{
+    color:black;
+  }
+  li {
+    list-style:none;
+  }
+  a {
+    color:black;
+    text-decoration:none;
+  }
+}
 @media (min-width: 900px) and (max-width: 1100px) {
   main {
   }
