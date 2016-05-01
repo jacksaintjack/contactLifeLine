@@ -4,16 +4,10 @@ class Volunteering extends React.Component {
   render () {
     return (
       <section className="volunteerContainer">
-        <header>
-          <h3>
-            Give, and it will be given to you. A good measure, pressed down,
-            shaken together and running over, will be poured into your lap.
-            For with the measure you use, it will be measured to you.”
-          </h3>
-          <h4>Luke 6:38</h4>
-        </header>
-        <section>
-          <h1>Four Hour Reassurance Training or Twenty-four Hour Crisis Training!</h1>
+        <header></header>
+        <section className="volunteerText">
+          <h1>VOLUNTEERING</h1>
+          <h2>Four Hour Reassurance Training or Twenty-four Hour Crisis Training!</h2>
           <p>
             Reassurance Training-  Have you ever spent time with someone who was 100
             years young talking of the things she/he had done?

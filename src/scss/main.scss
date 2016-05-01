@@ -42,6 +42,23 @@
   text-align:center;
   margin:0;
 }
+@mixin textContainers {
+  @include shift(2);
+  @include span-columns(8);
+  box-shadow: 0px 1px 13px gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 20px 15px 20px;
+  h1 {
+    @include outer-container(80%);
+    text-align:center;
+    color: #586273;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+  }
+  h2 {
+    color: #6C7077;
+  }
+}
 /***** 1. Main Navigation Bar *****/
 .mainNav {
   @include outer-container(100%)
@@ -131,16 +148,16 @@ main {
   @include outer-container(100%)
 }
 .homeMain:before, .homeMain:after {
-    content: " ";
-    display: block;
-    clear:both;
+  content: " ";
+  display: block;
+  clear:both;
 }
 .homeMain {
   @include span-columns(12);
   header:before, header:after {
-      content: " ";
-      display: block;
-      clear:both;
+    content: " ";
+    display: block;
+    clear:both;
   }
 
   header {
@@ -367,48 +384,42 @@ footer {
 .programsContainer {
   @include outer-container(100%);
 
-  section {
-    @include shift(1.5);
-    @include span-columns(9);
-  }
   header {
     @include span-columns(12);
-    background-image: url('../img/CrossMountain.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 60em;
-    background-position: 0em -13.5em;
-    height:20em;
-    float:none;
+    height: 23em;
+    background: url('../img/CrossMountain.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .programsText {
+    @include textContainers;
   }
 }
 
 // Styling for Volunteering
 .volunteerContainer {
   @include outer-container(100%);
-
-  section {
-    @include shift(1.5);
-    @include span-columns(9);
-  }
   header {
     @include span-columns(12);
-    background-image: url('../img/TheTree.jpg');
-    background-repeat: no-repeat;
+    height: 23em;
+    background: url('../img/TheTree.jpg') no-repeat;
     background-size: cover;
-    background-position: 0em -13.5em;
-    height:30em;
+    background-position: center center;
+  }
 
-    h3 {
-      margin-top:0;
-      position:relative;
-    }
-    h4 {
-      position:relative;
-    }
+  .volunteerText {
+    @include textContainers;
   }
 }
 
 // Styling for Mad Sam
 .madSamContainer {
   @include outer-container(70%);
+}
+
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  main {
+  }
 }
