@@ -11,8 +11,8 @@
 /***** 5. Volunteering *****/
 /***** 6. Mad Sam *****/
 /***** 7. Sponsors *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
+/***** 8. Contact Us *****/
+/***** 9. History *****/
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
 /***** TABLE OF CONTENTS *****/
@@ -436,7 +436,7 @@ footer {
 .sponsorsContainer {
   @include textContainers;
 
-  h2{
+  h2 {
     color:black;
   }
   li {
@@ -447,6 +447,35 @@ footer {
     text-decoration:none;
   }
 }
+
+/***** 8. Contact Us *****/
+.contactusContainer {
+  @include textContainers;
+
+  .contactusText {
+    h2, h3 {
+      text-align:center;
+    }
+    h3 a {
+      color:black;
+      text-decoration: none;
+    }
+    .facebookLink {
+      color:#445897;
+    }
+    .twiiterLink {
+      color:#8A5A4E;
+    }
+    .instagramLink {
+      color:#6A8DC7;
+    }
+  }
+}
+/***** 9. History *****/
+.historyContainer {
+  @include textContainers;
+}
+/***** . Media Queries *****/
 @media (min-width: 900px) and (max-width: 1100px) {
   main {
   }
