@@ -13,12 +13,7 @@
 /***** 7. Sponsors *****/
 /***** 8. Contact Us *****/
 /***** 9. History *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
-/***** TABLE OF CONTENTS *****/
+/***** 10. Media Queries *****/
 
 /*****  Mixins *****/
 
@@ -37,7 +32,7 @@
 }
 @mixin navBoxText {
   color: white;
-  padding-top: 23%;
+  padding-top: 120px;
   font-size: 4.5em;
   text-shadow: 3px 3px 5px black;
   text-align:center;
@@ -164,10 +159,9 @@ main {
 
   header {
     @include span-columns(12);
-    background-image: url('../img/ThePath.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 60em;
-    background-position: 0em -13.5em;
+    background: url('../img/ThePath.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
     height:40em;
     float:none;
     padding-top: 90px;
@@ -239,7 +233,9 @@ main {
       }
       .missionBox {
         @include navBoxHome;
-        background-image:url('../img/BookThinking.jpg');
+        background: url('../img/BookThinking.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
         cursor: pointer;
         cursor: hand;
         p {
@@ -254,7 +250,9 @@ main {
       }
       .aboutBox {
         @include navBoxHome;
-        background-image:url('../img/Flower.jpg');
+        background: url('../img/Flower.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
         cursor: pointer;
         cursor: hand;
         p {
@@ -269,7 +267,9 @@ main {
       }
       .joinBox {
         @include navBoxHome;
-        background-image:url('../img/Togather.jpg');
+        background: url('../img/Togather.jpg') no-repeat;
+        background-size: cover;
+        background-position: center center;
         cursor: pointer;
         cursor: hand;
         p{
@@ -475,8 +475,99 @@ footer {
 .historyContainer {
   @include textContainers;
 }
-/***** . Media Queries *****/
-@media (min-width: 900px) and (max-width: 1100px) {
-  main {
+/***** 10. Media Queries *****/
+@media (min-width: 800px) and (max-width: 1100px) {
+  /*** Main Navigation Bar ***/
+  .mainNav {
+    .nav {
+      font-size:1.1em;
+      padding-left:20px;
+    }
+    ul {
+      li:nth-child(1) {
+        @include shift(0.15);
+      }
+      li {
+        padding-top:20px;
+      }
+
+      .scrollDown {
+
+        .navHide {
+          @include span-columns(4);
+          position:absolute;
+          display:none;
+          li {
+          }
+        }
+      }
+      .socialMediaIcons{
+        ul {
+          padding-left:0;
+        }
+      }
+    }
+  }
+
+  /*****  Home Main *****/
+  .homeMain {
+
+    header {
+      height:35em;
+      padding-top: 50px;
+
+      h1 {
+        @include headerFonts;
+        font-size:3.5em;
+        margin-top:0;
+      }
+
+      h3 {
+        font-size:1.6em;
+      }
+
+      h4 {
+        @include headerFonts;
+        @include span-columns(5);
+        @include shift(6.8);
+        font-size:1.3em;
+        margin-top: 1em;
+      }
+      .phoneNumber {
+        h2 {
+          @include headerFonts;
+          font-size: 2.5em;
+        }
+      }
+    }
+    .motto {
+      font-size: 2.4em;
+      padding: 20px 60px 0 60px;
+    }
+    nav {
+      ul {
+        .missionBox {
+          height:15em;
+          p {
+            padding-top:100px;
+            font-size:3.0em;
+          }
+        }
+        .aboutBox {
+          height:15em;
+          p {
+            padding-top:100px;
+            font-size:3.0em;
+          }
+        }
+        .joinBox {
+          height:15em;
+          p {
+            padding-top:100px;
+            font-size:3.0em;
+          }
+        }
+      }
+    }
   }
 }
