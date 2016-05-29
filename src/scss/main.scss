@@ -428,7 +428,7 @@ footer {
     margin-top: 60px;
     height: 11em;
     background: url('../img/MadSam.jpg') no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
   }
   .madSamText {
@@ -705,15 +705,9 @@ footer {
   }
 
   /******* Footer Section *******/
-  footer:before, footer:after {
-    content: " ";
-    display: block;
-    clear:both;
-  }
 
   footer {
     @include outer-container(95%);
-    border-top: 1px solid rgba(128, 128, 128, 0.16);
 
     .footerLinks {
       @include span-columns(12);
@@ -736,33 +730,21 @@ footer {
       }
       .mainLogo img {
         height: 6em;
-        width: 6em;
+        width: 5em;
       }
       .pageLinks {
         ul {
           padding-left:10px;
-        }
-        .footerNav {
-          font-weight:bold
-        }
-        li {
-          list-style: none;
         }
       }
       .afilLinks {
         ul {
           padding-left:10px;
         }
-        .footerNav{
-          font-weight:bold;
-        }
-        li {
-          list-style: none;
-        }
       }
       .fccLogo img {
         height: 6em;
-        width: 6em;
+        width: 5em;
         float:right;
       }
     }
@@ -772,47 +754,41 @@ footer {
   .programsContainer {
     @include outer-container(100%);
 
-    header {
-      @include span-columns(12);
-      height: 23em;
-      background: url('../img/CrossMountain.jpg') no-repeat;
-      background-size: cover;
-      background-position: center center;
-    }
-
     .programsText {
       @include shift(0.75);
       @include span-columns(10.5);
-
     }
   }
 
   /***** Volunteering *****/
+    .volunteerContainer {
     .volunteerText {
       @include shift(0.75);
       @include span-columns(10.5);
-
     }
+  }
   /***** Mad Sam *****/
   .madSamContainer {
-    @include textContainers;
+    @include shift(0.75);
+    @include span-columns(10.5);
 
     .madSamLogo {
-      @include span-columns(4);
+      @include span-columns(5);
       margin-top: 60px;
       height: 11em;
       background: url('../img/MadSam.jpg') no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: center center;
     }
     .madSamText {
-      @include span-columns(8);
+      @include span-columns(7);
       float:right;
     }
   }
   /***** Sponsors *****/
   .sponsorsContainer {
-    @include textContainers;
+    @include shift(0.75);
+    @include span-columns(10.5);
 
     h2 {
       color:black;
@@ -828,7 +804,8 @@ footer {
 
   /***** Contact Us *****/
   .contactusContainer {
-    @include textContainers;
+    @include shift(0.75);
+    @include span-columns(10.5);
 
     .contactusText {
       h2, h3 {
@@ -851,6 +828,7 @@ footer {
   }
   /***** History *****/
   .historyContainer {
-    @include textContainers;
+    @include shift(0.75);
+    @include span-columns(10.5);
   }
 }
