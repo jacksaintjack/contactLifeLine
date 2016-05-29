@@ -16,7 +16,7 @@ class Footer extends React.Component {
               <span className='footerNav'>Navigation</span>
               <li><i className="fa fa-angle-double-right"></i>Home</li>
               <li><i className="fa fa-angle-double-right"></i>Programs</li>
-              <li><i className="fa fa-angle-double-right"></i>Volunteering</li>
+              <li><i className="fa fa-angle-double-right"></i>Volunteer</li>
               <li><i className="fa fa-angle-double-right"></i>Contact Us</li>
               <li><i className="fa fa-angle-double-right"></i>History</li>
             </ul>

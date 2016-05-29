@@ -23,7 +23,9 @@ class Home extends React.Component {
       $('#aboutArticle').css('display', 'none');
       $('#missionArticle').css('display', 'none');
     });
+
   }
+
   render () {
     return(
       <section className='homeMain'>
