@@ -41,6 +41,7 @@ class Footer extends React.Component {
           </li>
 
           <ul className='mobileLogo'>
+            
             <li className='mainLogoMobile'>
               <img src='./img/Logo.png' />
             </li>
@@ -48,6 +49,7 @@ class Footer extends React.Component {
             <li className='fccLogoMobile'>
               <img src='./img/familyCouncelingLogo.jpg' />
             </li>
+
           </ul>
         </ul>
       </footer>
