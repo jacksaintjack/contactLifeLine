@@ -166,9 +166,8 @@ main {
     background: url('../img/ThePath.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
-    height:40em;
     float:none;
-    padding-top: 90px;
+    padding: 50px 0;
 
     h1 {
       @include headerFonts;
@@ -212,9 +211,8 @@ main {
     @include span-columns(12);
     background: url("../img/checkered_pattern.png");
     text-align:center;
-    height:5em;
     font-size: 2.5em;
-    padding-top: 40px;
+    padding: 20px 30px;
     p {
       font-family: init;
       font-style: italic;
@@ -517,8 +515,7 @@ footer {
   .homeMain {
 
     header {
-      height:35em;
-      padding-top: 50px;
+      padding: 40px 0;
 
       h1 {
         @include headerFonts;
@@ -533,7 +530,7 @@ footer {
       h4 {
         @include headerFonts;
         @include span-columns(5);
-        @include shift(6.8);
+        @include shift(6);
         font-size:1.3em;
         margin-top: 1em;
       }
@@ -657,8 +654,8 @@ footer {
 
       h4 {
         @include headerFonts;
-        @include span-columns(5);
-        @include shift(6.8);
+        @include span-columns(6);
+        @include shift(5.5);
         font-size:1.3em;
         margin-top: 1em;
       }
@@ -806,6 +803,271 @@ footer {
   .contactusContainer {
     @include shift(0.75);
     @include span-columns(10.5);
+
+    .contactusText {
+      h2, h3 {
+        text-align:center;
+      }
+      h3 a {
+        color:black;
+        text-decoration: none;
+      }
+      .facebookLink {
+        color:#445897;
+      }
+      .twiiterLink {
+        color:#8A5A4E;
+      }
+      .instagramLink {
+        color:#6A8DC7;
+      }
+    }
+  }
+  /***** History *****/
+  .historyContainer {
+    @include shift(0.75);
+    @include span-columns(10.5);
+  }
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  .mainNav {
+
+    .nav {
+      font-size:1.3em;
+    }
+
+    ul {
+
+      li {
+        display:none;
+      }
+      li:nth-child(1) {
+        margin-left:0;
+      }
+      .mobileNav {
+        display:block;;
+        padding-top:14px;
+        @include span-columns(2);
+
+        .mobileMenu {
+          @include span-columns(10);
+          display:none;
+          position:absolute;
+          background-color:rgba(27, 77, 85, 0.9);
+          padding-bottom:15px;
+          top: 60px;
+          padding-left:15px;
+
+          li:nth-child(1) {
+            padding-top:10px;
+          }
+
+          li {
+            display:block;
+            @include span-columns(12);
+          }
+          .expandNavMobile {
+            .navHideMobile {
+              display:none;
+            }
+          }
+        }
+      }
+
+      .socialMediaIcons{
+        @include span-columns(9);
+        float:right;
+        padding-right:5px;
+        ul {
+          padding-left:0;
+          a{
+            li{
+              float:right;
+
+              i{
+                font-size:1.5em;
+                color:white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+/* Home Page */
+.homeMain {
+
+    header {
+      height:35em;
+      padding-top: 30px;
+
+      h1 {
+        font-size:2.3em;
+        margin-top:0;
+        color:white;
+      }
+
+      h3 {
+        font-size:1.2em;
+        float:none;
+        color:white;
+      }
+
+      h4 {
+        @include span-columns(5);
+        @include shift(6);
+        font-size:1.3em;
+        margin-top: 1em;
+        color:white;
+      }
+      .phoneNumber {
+        h2 {
+          font-size: 2.1em;
+          color:white;
+          margin-top:0;
+        }
+      }
+    }
+    .motto {
+      font-size: 2em;
+      padding: 20px 30px 0 30px;
+
+      p {
+        margin-top:25px;
+      }
+    }
+    nav {
+      ul {
+        .missionBox {
+          height:13em;
+          p {
+            padding-top: 90px;
+            font-size: 2.2em;
+          }
+        }
+        .aboutBox {
+          height:13em;
+          p {
+            padding-top: 90px;
+            font-size: 2.2em;
+          }
+        }
+        .joinBox {
+          height:13em;
+          p {
+            padding-top: 90px;
+            font-size: 2.2em;
+          }
+        }
+      }
+    }
+  }
+
+  /******* Footer Section *******/
+
+  footer {
+    @include outer-container(95%);
+
+    .footerLinks {
+      @include span-columns(12);
+      padding-left:0;
+
+      .mainLogo {
+        @include span-columns(2.3);
+      }
+      .fccLogo {
+        @include span-columns(2.3);
+      }
+
+       .afilLinks, .pageLink {
+        @include shift(2);
+        @include span-columns(8);
+        display:inline-block;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      .mainLogo img {
+        height: 6em;
+        width: 5em;
+      }
+      .pageLinks {
+        ul {
+          padding-left:10px;
+        }
+      }
+      .afilLinks {
+        ul {
+          padding-left:10px;
+        }
+      }
+      .fccLogo img {
+        height: 6em;
+        width: 5em;
+        float:right;
+      }
+    }
+  }
+
+  /***** Programs *****/
+  .programsContainer {
+    @include outer-container(100%);
+
+    .programsText {
+      @include shift(0.5);
+      @include span-columns(11);
+    }
+  }
+
+  /***** Volunteering *****/
+    .volunteerContainer {
+    .volunteerText {
+      @include shift(0.5);
+      @include span-columns(11);
+    }
+  }
+  /***** Mad Sam *****/
+  .madSamContainer {
+    @include shift(0.5);
+    @include span-columns(11);
+
+    .madSamLogo {
+      @include span-columns(8);
+      margin-top: 60px;
+      height: 11em;
+      background: url('../img/MadSam.jpg') no-repeat;
+      background-size: contain;
+      background-position: center center;
+    }
+    .madSamText {
+      @include span-columns(7);
+      float:right;
+    }
+  }
+  /***** Sponsors *****/
+  .sponsorsContainer {
+    @include shift(0.5);
+    @include span-columns(11);
+
+    h2 {
+      color:black;
+    }
+    li {
+      list-style:none;
+    }
+    a {
+      color:black;
+      text-decoration:none;
+    }
+  }
+
+  /***** Contact Us *****/
+  .contactusContainer {
+    @include shift(0.5);
+    @include span-columns(11);
 
     .contactusText {
       h2, h3 {
