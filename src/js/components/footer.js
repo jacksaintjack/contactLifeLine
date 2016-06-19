@@ -36,11 +36,19 @@ class Footer extends React.Component {
               </li>
             </ul>
           </li>
-
           <li className='fccLogo'>
             <img src='./img/familyCouncelingLogo.jpg' />
           </li>
 
+          <ul className='mobileLogo'>
+            <li className='mainLogoMobile'>
+              <img src='./img/Logo.png' />
+            </li>
+
+            <li className='fccLogoMobile'>
+              <img src='./img/familyCouncelingLogo.jpg' />
+            </li>
+          </ul>
         </ul>
       </footer>
     )};
