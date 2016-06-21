@@ -654,8 +654,8 @@ footer {
     }
   }
 
-/* Home Page */
-.homeMain {
+  /* Home Page */
+  .homeMain {
 
     header {
       padding:30px 0;
@@ -736,7 +736,7 @@ footer {
       .fccLogo {
         @include span-columns(2);
       }
-       .afilLinks, .pageLink {
+      .afilLinks, .pageLink {
         @include span-columns(4);
         display:inline-block;
       }
@@ -777,7 +777,7 @@ footer {
   }
 
   /***** Volunteering *****/
-    .volunteerContainer {
+  .volunteerContainer {
     .volunteerText {
       @include shift(0.75);
       @include span-columns(10.5);
@@ -867,7 +867,7 @@ footer {
         margin-left:0;
       }
       .mobileNav {
-        display:block;;
+        display:block;
         padding-top:14px;
         @include span-columns(2);
 
@@ -918,9 +918,9 @@ footer {
     }
   }
 
-/* Home Page */
-.homeMain {
-  margin-top:63px;
+  /* Home Page */
+  .homeMain {
+    margin-top:63px;
     header {
       padding:30px 0;
 
@@ -1079,21 +1079,44 @@ footer {
   .programsContainer {
     @include outer-container(100%);
 
+    header {
+      margin-top: 60px;
+      height:15em;
+    }
     .programsText {
       @include shift(0.5);
       @include span-columns(11);
+
+      h1 {
+        font-size:1.3em;
+      }
+      h2 {
+        font-size:1.2em;
+      }
     }
   }
 
   /***** Volunteering *****/
-    .volunteerContainer {
+  .volunteerContainer {
+    header {
+      margin-top: 60px;
+      height:15em;
+    }
     .volunteerText {
       @include shift(0.5);
       @include span-columns(11);
+
+      h1 {
+        font-size:1.4em;
+      }
+      h2 {
+        font-size:1.2em;
+      }
     }
   }
   /***** Mad Sam *****/
   .madSamContainer {
+    margin-top:80px;
     @include shift(0.5);
     @include span-columns(11);
 
@@ -1108,18 +1131,36 @@ footer {
     .madSamText {
       @include span-columns(7);
       float:right;
+
+      h1 {
+        font-size:1.4em;
+      }
+      h2 {
+        font-size:1.2em;
+      }
     }
   }
   /***** Sponsors *****/
   .sponsorsContainer {
+    margin-top:80px;
     @include shift(0.5);
     @include span-columns(11);
 
+    h1 {
+      font-size:1.4em;
+    }
     h2 {
+      font-size:1.2em;
       color:black;
     }
-    li {
-      list-style:none;
+    h3 {
+      font-size:1em;
+    }
+    ul {
+      padding-left:15px;
+      li {
+        list-style:none;
+      }
     }
     a {
       color:black;
@@ -1129,10 +1170,20 @@ footer {
 
   /***** Contact Us *****/
   .contactusContainer {
+    margin-top:80px;
     @include shift(0.5);
     @include span-columns(11);
 
     .contactusText {
+      h1 {
+        font-size:1.4em;
+      }
+      h2 {
+        font-size:1.2em;
+      }
+      h3 {
+        font-size:1em;
+      }
       h2, h3 {
         text-align:center;
       }
@@ -1153,7 +1204,14 @@ footer {
   }
   /***** History *****/
   .historyContainer {
+    margin-top:80px;
     @include shift(0.75);
     @include span-columns(10.5);
+
+    .historyText {
+      h1 {
+        font-size:1.4em;
+      }
+    }
   }
 }
