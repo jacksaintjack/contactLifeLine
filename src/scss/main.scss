@@ -412,7 +412,7 @@ footer {
     height: 23em;
     background: url('../img/CrossMountain.jpg') no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center 40%;
   }
 
   .programsText {
@@ -1121,16 +1121,16 @@ footer {
     @include span-columns(11);
 
     .madSamLogo {
-      @include span-columns(8);
-      margin-top: 60px;
-      height: 11em;
+      @include span-columns(12);
+      margin-top: 30px;
+      height: 9em;
       background: url('../img/MadSam.jpg') no-repeat;
       background-size: contain;
       background-position: center center;
     }
     .madSamText {
-      @include span-columns(7);
-      float:right;
+      @include span-columns(12);
+      float:none;
 
       h1 {
         font-size:1.4em;

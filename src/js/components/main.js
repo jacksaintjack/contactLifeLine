@@ -5,37 +5,29 @@ import $ from 'jquery'
 import Footer from './footer'
 
 class Main extends React.Component {
-
   componentDidMount() {
     $('#navDropDown').click(function () {
-      var clicks = $(this).data('clicks');
-      if (clicks) {
-        $('.navHide').css( 'display', 'none');
-        $(this).data("clicks", !clicks);
-      } else {
-        $('.navHide').css( 'display', 'block');
-        $(this).data("clicks", !clicks);
-      }
-    }).mouseleave(function() {
-      $('.navHide').css( 'display', 'none');
-      $(this).data('clicks', false);
+      $(".navHide").is(":hidden") ? $(".navHide").slideDown() : $(".navHide").slideUp("fast");
     });
+    $(document).click(function(event) {
+      if(!$(event.target).closest('#navDropDown').length && !$(event.target).is('#navDropDown')) {
+          if($('.navHide').is(":visible")) {
+              $('.navHide').slideUp("fast");
+          }
+      }
+  });
 
     $('#mobileNav').click(function () {
-      var clicks = $(this).data('clicks');
-      if (clicks) {
-        $('.mobileMenu').css( 'display', 'none');
-        $(this).data("clicks", !clicks);
-      } else {
-        $('.mobileMenu').css( 'display', 'block');
-        $(this).data("clicks", !clicks);
-      }
-    }).mouseleave(function() {
-      $('.mobileMenu').css( 'display', 'none');
-      $(this).data('clicks', false);
+      $(".mobileMenu").is(":hidden") ? $(".mobileMenu").slideDown() : $(".mobileMenu").slideUp("fast");
     });
-  }
-
+    $(document).click(function(event) {
+      if(!$(event.target).closest('#mobileNav').length && !$(event.target).is('#mobileNav')) {
+          if($('.mobileMenu').is(":visible")) {
+              $('.mobileMenu').slideUp("fast");
+          }
+      }
+  });
+}
   render () {
     return(
       <section className='mainWrapper'>

@@ -13,7 +13,7 @@ import ContactUs from './components/contactUs.js';
 import OurHistory from './components/ourHistory.js';
 
 ReactDOM.render((
-  <Router history={ hashHistory }>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={ hashHistory }>
     <Route path='/' component={ Main }>
       <IndexRoute component={ Home }/>
       <Route path='programs' component={ Programs }/>
