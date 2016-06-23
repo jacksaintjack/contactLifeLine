@@ -29,6 +29,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
+    "gulp-deploy-git": "^0.5.3",
     "gulp-gh-pages": "^0.5.2"
   }
 }
