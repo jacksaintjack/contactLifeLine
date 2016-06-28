@@ -14,7 +14,7 @@ class ContactUs extends React.Component {
           <h3><a href='tel://931.246.0754'>(931) 247-0754</a></h3>
 
           <h2>Email</h2>
-          <h3><a href='mailto:support@example.com'>support@example.com</a></h3>
+          <h3><a href='mailto:contactlifelinehr@gmail.com'>contactlifelinehr@gmail.com</a></h3>
 
           <h2>FIND US ON:</h2>
 

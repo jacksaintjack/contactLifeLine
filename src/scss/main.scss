@@ -474,11 +474,14 @@ footer {
   @include textContainers;
 
   .contactusText {
+    h2 {
+      color: black;
+    }
     h2, h3 {
       text-align:center;
     }
     h3 a {
-      color:black;
+      color: #6C7077;
       text-decoration: none;
     }
     .facebookLink {
@@ -828,7 +831,6 @@ footer {
         text-align:center;
       }
       h3 a {
-        color:black;
         text-decoration: none;
       }
       .facebookLink {
@@ -1188,7 +1190,6 @@ footer {
         text-align:center;
       }
       h3 a {
-        color:black;
         text-decoration: none;
       }
       .facebookLink {
